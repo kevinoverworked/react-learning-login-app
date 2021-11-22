@@ -40,7 +40,7 @@ const Login = (props) => {
     clearTimeout();
     const identifier = setTimeout(() => {
       setFormIsValid(
-        emailState.value.includes("@") && passwordState.value.trim().length > 6
+        emailState.isValid && passwordState.isValid
       );
     }, 500);
 
